@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top" style="height: 50px" th:fragment="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="/"><img src="/img/logo.png" style="width: auto; height: 50px"></a>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar" style="background-color: #ffffff">
+        <ul class="navbar-nav me-auto" style="background-color: #ffffff">
+          <li class="nav-item">
+            <a class="nav-link" href="#mainVideo">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#info">info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#info2">info2</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+              <i class="icon-calendar"> 달력</i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">승연이 전용메뉴</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">글 쓰기</a></li>
+              <li><a class="dropdown-item" href="#">유튜브 불러오기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymleaf/layout">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/82f9032a60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--네비바-->
+    <nav th:replace="fragments/nav.html :: nav"></nav>
+
+    <div class="container-fluid ">
+        <div class="row justify-content-center main-container">
+            <div class="col-xl-10">
+                <video width="100%" height="auto" autoplay loop muted id="mainVideo">
+                    <source src="/video/hodu.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col">
+                <div class="row justify-content-center align-items-center" style="height: 100%;">
+                    <div class="col" style="max-width: 400px;">
+                        <h4>안녕? </h4>
+                        <p>내 이름은 호두라고해!! </p>
+                        <p>나는 2019년 10월 23일에 태어났어 </p>
+                        <p>가장 좋아하는건 승연이언니랑 산책! </p>
+                        <p>잘 하는건 달리기랑 애교야! </p>
+                        <p>잘 부탁해 </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #eeeeee;padding-top: 20px;padding-bottom: 20px;">
+        <div class="container-md" id="info" style="padding-top: 20px;padding-bottom: 20px">
+            <h3 class="text-center" style="margin-bottom: 20px">달리는 내 모습이야</h3>
+            <!-- Carousel -->
+            <div id="run" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#run" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#run" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#run" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#run" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#run" data-bs-slide-to="4"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container align-items-center carousel-item-container">
+                            <img src="/img/mainpage/run/001.jpeg" class="d-block w-100 main-slide-content">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center carousel-item-container">
+                            <img src="/img/mainpage/run/002.jpeg" class="d-block w-100 main-slide-content">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center carousel-item-container">
+                            <img src="/img/mainpage/run/003.jpeg" class="d-block w-100 main-slide-content">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center carousel-item-container">
+                            <img src="/img/mainpage/run/004.jpeg" class="d-block w-100 main-slide-content">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center carousel-item-container">
+                            <img src="/img/mainpage/run/005.jpeg" class="d-block w-100 main-slide-content">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#run" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#run" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+<!--    애교부분-->
+    <div class="container-fluid" style="padding-top: 20px;padding-bottom: 20px;">
+        <div class="container-md" id="info2" style="padding-top: 20px;padding-bottom: 20px">
+            <h3 class="text-center" style="margin-bottom: 20px">이건 내 애교!!!</h3>
+            <!-- Carousel -->
+            <div id="cute" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#cute" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#cute" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#cute" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#cute" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#cute" data-bs-slide-to="4"></button>
+                </div>
+
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container align-items-center carousel-item-container">
+                            <img src="/img/mainpage/cute/001.jpeg" class="d-block w-100 main-slide-content">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center carousel-item-container">
+                            <img src="/img/mainpage/cute/002.jpeg" class="d-block w-100 main-slide-content">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center carousel-item-container">
+                            <img src="/img/mainpage/cute/003.jpeg" class="d-block w-100 main-slide-content">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center carousel-item-container">
+                            <img src="/img/mainpage/cute/004.jpeg" class="d-block w-100 main-slide-content">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container align-items-center carousel-item-container">
+                            <img src="/img/mainpage/cute/005.jpeg" class="d-block w-100 main-slide-content">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#cute" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cute" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div th:replace="fragments/calendar.html::calendarModal"></div>
+    <div th:replace="fragments/footer.html :: footer" ></div>
+</body>
+<head th:replace="fragments/calendar.html::calendarHead"></head>
+</html>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    div{
+        scroll-margin-top: 50px;
+        +
+    }
+    nav {
+        height: 50px;
+        width: 100%;
+    }
+    .container-fluid{
+        padding: 0px;
+    }
+    .main-slide-content{
+        max-height: 900px;
+        object-fit: contain;
+    }
+    .carousel-item-container{
+        max-height: 900px;
+        width: 100%;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        .main-container {
+            margin-top: 80px;
+        }
+    }
+</style>
